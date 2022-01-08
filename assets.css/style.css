@@ -11,7 +11,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 50px;
+  padding: 90px;
   text-align: center;
   background: #3700B3;
   color: white;
@@ -93,6 +93,8 @@ margin-left: -15px;
   padding: 20px;
 }
 
+
+
 /* Footer */
 .footer {
   padding: 20px;
@@ -113,4 +115,11 @@ margin-left: -15px;
     float: none;
     width: 100%;
   }
+.navbar ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+margin-top: 15px;
+margin-left: -15px;
+}
+
 }
