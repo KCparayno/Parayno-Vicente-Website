@@ -11,7 +11,8 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background image
+  background:navy;
+  background-size: 100%;
   color: white;
 }
 
@@ -96,7 +97,8 @@ margin-left: -15px;
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: navy;
+  color:#fff;
 }
 
 
