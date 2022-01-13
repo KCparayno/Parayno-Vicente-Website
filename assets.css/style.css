@@ -19,6 +19,7 @@ body {
 
 .header h1 {
   font-size: 40px;
+ font-family: Perpetua Titling MT ;
 }
 
 
@@ -120,5 +121,6 @@ position: absolute;
 margin-top: 15px;
 margin-left: -15px;
 }
+
 
 }
