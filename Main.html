@@ -79,6 +79,12 @@
     <img src="ad.jfif" style="width:100%">
   </div>
 
+
+  <div class="mySlides fade">
+    <img src="banner1.jpg" style="width:100%">
+  </div>
+  
+
   
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -91,35 +97,25 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
 </div>
 
 
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
+showSlides();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 
@@ -129,10 +125,10 @@ function showSlides(n) {
 <nav>
 <div class="navbar">
   <ul>
-  <li><a href="#" >Home</a></li> 
+  <li><a href="Main.html" >Home</a></li> 
   <li><a href="Academics.html">Academics</a></li>
-  <li><a href="#">Career Oppurtuinities</a></li>
-  <li><a href="#">Library </a><li>  
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Courses Offered  </a><li>  
   <li><a href="#" class="right">Inquries</a></li>
   </Ul>
 </div>
@@ -149,9 +145,28 @@ function showSlides(n) {
     <img src= "BED.jpg" width="400" height="60" >
     <img src= "SHS.jpg" width="400" height="60" >
     <img src= "GSPSe.jpg" width="400" height="60" >
+
+    <h3>Video of Letran Calamba </h3>
+
+    <video width="400" height="240" controls>
+      <source src="Letran Calamba.mp4" type="video/mp4">
+      <source src="Letran Calamba.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+
   </div>
   <div class="main">
     <h2>News </h2>
+    <h5>Letran Basketball , Nov 19 ,2019 </h5>
+    <img src= "Nursing.jpg" width="900" height="200" >
+    <p>THE CROWN IS BACK TO THE WALLS!
+      COLEGIO DE SAN JUAN DE LETRAN KNIGHTS ARE YOUR NCAA SEASON 95 MEN’S BASKETBALL CHAMPIONS!<br> 
+      They won against the fierce San Beda Red Lions with a score of 79 to 81, Kudos Red Lions for an amazing season! 
+      What a great way to celebrate our 399th Founding Anniversary. See you next year as we host the NCAA Season 96! </p>
+
+     <br>
+
+
     <h5>Letran Basketball , Nov 19 ,2019 </h5>
     <img src= "ncaa_2019.png" width="900" height="200" >
     <p>THE CROWN IS BACK TO THE WALLS!
@@ -164,8 +179,21 @@ function showSlides(n) {
     <h5>Letran Calamba, Nov 21, 2016</h5>
     <img src= "QMD.jpg" width="900" height="200" >
     <p>Colegio de San Juan de Letran Calamba, a Catholic Dominican institution located in Calamba City, Laguna, is recognized as an exemplary educational institution of world class quality performance. It won Best in Class in the 2016 Global Performance Excellence Award (GPEA) and is a recipient of the Philippine Quality Award (PQA) Recognition for Commitment to Quality Management for the PA 18th          Award Cycle.</p>
-  </div>
+  <br>
+  <h2>9TH SUPPLIER'S CONVENTION AWARDS </h2>
+  <h5>Letran Calamba, Jun 9, 2016</h5>
+  <img src= "peserexcellentrating.png" width="900" height="200" >
+  <p> Phoenix Educational Systems Inc. has been acknowledged by Colegio de San Juan de Letran Calamba. On their 9th Supplier's Convention, “Supplier of the Year” is awarded to Phoenix Education Systems, Inc. in recognition for being an outstanding partner supplier in education.
+
+    An Excellent Rating of Suppliers Evaluation certificate is also given to Phoenix Educational Systems Inc. for achieving an Excellent Rating gathered on Supplier's Evaluation for Academic Year 2015-2016 prepared by Management Accounting and Finance Services Department.</p>
 </div>
+</div>
+
+
+
+
+
+
 
 <div class="footer">
   <img src= "ISO2015.png" width="100" height="100" >
