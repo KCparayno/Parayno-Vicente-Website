@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LETRAN CALAMBA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+ * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display:none ;}
+  img {vertical-align: middle;}
+  
+ 
+  .slideshow-container {
+    max-width: 5000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+<body>
+    <link href ="assets.css/style.css" rel ="stylesheet"/>
+<div class="header">
+
+<div class="slideshow-container">
+
+
+  <div class="mySlides fade">
+  
+    <img src="QMD.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="MKD.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <img src="yeet.jpg.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="ad.jfif" style="width:100%">
+  </div>
+
+
+  <div class="mySlides fade">
+    <img src="banner1.jpg" style="width:100%">
+  </div>
+  
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+       <img src="logoLetran.png" width ="100" height="100">
+  <h1> Colegio San Juan De Letran-Calamba</h1>
+  <p><b>LEARN.LEAD.LIVE</b></p>
+</div>
+
+<div class="navbar">
+  <ul>
+  <li><a href="Index.html" >Home</a></li> 
+  <li><a href="Academics.html">Academics</a></li>
+  <li><a href="Aboutus.html">About Us</a></li>
+  <li><a href="#">Courses Offered  </a><li>  
+  <li><a href="#" class="right">Inquries</a></li>
+  </Ul>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About US</h2>
+    <h5>Photo of Letran:</h5>
+    <img src= "aboutlink.jpg" width="380" height="100" >
+    <p>Colegio de San Juan de Letran Calamba was established on March 11, 1979 in Barangay Bucal, Calamba City, Laguna, in an 11-ha rolling site at the foot of Mt. Makiling. On August 7, 1986, Letran Calamba was granted autonomy by its mother institution (Letran Intramuros) with Rev. Fr. Tamerlane Lana, O.P. as its first Rector and President.</p>
+    <a href="Aboutus.html">More info... </a>
+  
+    <h3>Departments</h3>
+    <img src= "BED.jpg" width="400" height="60" >
+    <img src= "SHS.jpg" width="400" height="60" >
+    <img src= "GSPSe.jpg" width="400" height="60" >
+
+    <h3>Video of Letran Calamba </h3>
+
+    <video width="400" height="240" controls>
+      <source src="Letran Calamba.mp4" type="video/mp4">
+      <source src="Letran Calamba.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+    </video>
+
+  </div>
+  <div class="main">
+    <h2>News </h2>
+    <h5> Nursing Department, July 17 ,2021 </h5>
+    <img src= "Nursing.jpg" width="900" height="300" >
+    <p>Kudos to the School of Nursing for achieving a 100% passing percentage in the July 2021 Nursing Board Examination!
+
+      Congratulations, to our new Letranite nurses!
+      You make us proud!
+      
+      #ArribaLetran
+      #LetranCalamba
+      #discoveryourfuturewithletran </p>
+
+     <br>
+
+
+    <h5>Letran Basketball , Nov 19 ,2019 </h5>
+    <img src= "ncaa_2019.png" width="900" height="300" >
+    <p>THE CROWN IS BACK TO THE WALLS!
+      COLEGIO DE SAN JUAN DE LETRAN KNIGHTS ARE YOUR NCAA SEASON 95 MEN’S BASKETBALL CHAMPIONS!<br> 
+      They won against the fierce San Beda Red Lions with a score of 79 to 81, Kudos Red Lions for an amazing season! 
+      What a great way to celebrate our 399th Founding Anniversary. See you next year as we host the NCAA Season 96! </p>
+   
+    <br>
+    <h2>Award for Excilence </h2>
+    <h5>Letran Calamba, Nov 21, 2016</h5>
+    <img src= "QMD.jpg" width="900" height="300" >
+    <p>Colegio de San Juan de Letran Calamba, a Catholic Dominican institution located in Calamba City, Laguna, is recognized as an exemplary educational institution of world class quality performance. It won Best in Class in the 2016 Global Performance Excellence Award (GPEA) and is a recipient of the Philippine Quality Award (PQA) Recognition for Commitment to Quality Management for the PA 18th          Award Cycle.</p>
+  <br>
+  <h2>9TH SUPPLIER'S CONVENTION AWARDS </h2>
+  <h5>Letran Calamba, Jun 9, 2016</h5>
+  <img src= "peserexcellentrating.png" width="900" height="300" >
+  <p> Phoenix Educational Systems Inc. has been acknowledged by Colegio de San Juan de Letran Calamba. On their 9th Supplier's Convention, “Supplier of the Year” is awarded to Phoenix Education Systems, Inc. in recognition for being an outstanding partner supplier in education.
+
+    An Excellent Rating of Suppliers Evaluation certificate is also given to Phoenix Educational Systems Inc. for achieving an Excellent Rating gathered on Supplier's Evaluation for Academic Year 2015-2016 prepared by Management Accounting and Finance Services Department.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="footer">
+  <img src= "ISO2015.png" width="100" height="100" >
+<p>Colegio de San Juan de Letran Calamba
+Bucal, Calamba City, Laguna, Philippines • 4027
+Tel No: (049) 545-5453
+Copyright © CSJL Calamba
+All rights reserve</p>
+</div>
+
+</body>
+</html>
