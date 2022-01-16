@@ -9,11 +9,13 @@ body {
   margin: 0;
   text-align: left;
   float:left;
+  background:#f1f1f1 ;
 }
 .header {
+
   padding: 80px;
   text-align: center;
-  background:navy;
+  background:#3b50b2;
   background-size: 100%;
   color: white;
 }
@@ -80,17 +82,16 @@ margin-left: -15px;
 
 
 .side {
-  -ms-flex: 30%; 
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
+  -ms-flex: 20%; 
+  flex: 20%;
+  background-color: green;
+  padding: 10px;
 }
 
 
 .main {   
   -ms-flex: 70%; 
   flex: 70%;
-  background-color: white;
   padding: 20px;
   float:left;
 }
@@ -126,12 +127,6 @@ margin-left: -15px;
 }
 
 }
-.sideline {
-  -ms-flex: 30%; 
-  flex: 30%;
-  background-color: #fff;
-  padding: 50px;
-}
 .article{
   -ms-flex: 70%; 
   flex: 70%;
@@ -155,8 +150,6 @@ margin-left: -15px;
 p {
   text-indent: 50px;
 }
-
-
 
 
 
@@ -192,14 +185,18 @@ p {
   display: block;
 }
 
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown-content a:hover {background-color: #ddd;}
-
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
+.dropdown:hover .dropbtn {
+ background-color: #3e8e41;
+}
+div.third {
+  background: rgba(0, 128, 0, 0.6);
+}
 
 
