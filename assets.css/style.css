@@ -56,15 +56,34 @@ color: #fff;
   background-color: #ddd;
   color: black;
 }
- .sub-menu-1
-{
-display: block;
-position:absolute;
-background:rgb(3, 3, 3);
-margin-top: 15px;
-margin-left: -15px;
 
+.search-form{
+  margin-top:15px;
+  float:right;
+  margin-right:100px;
 }
+ input[type=text]{
+   padding:7px;
+   border:none;
+   font-size: 16px;
+   font-family:sans-serif;
+
+
+ }
+ .searchbtn{
+  float:right;
+  background:#04AA6D;
+  color:#fff;
+  border-radius:0 5px 5px 0;
+  cursor:pointer;
+  position: relative;
+  padding: 7px;
+  font-family: sans-serif;
+  border: none;
+  font-size :16px;
+
+
+ }
 
 .navbar a.active {
   background-color: #666;
@@ -97,6 +116,8 @@ margin-left: -15px;
   float:left;
   background-color:#005792;
   color:#fff;
+  text-indent: 50px;
+  margin-left:25px ;
 }
 
 
@@ -149,13 +170,6 @@ margin-left: -15px;
 .sidecontent{
   text-align: center;
 }
-
-p {
-  text-align:left;
-  text-indent: 50px;
-  margin-left:25px ;
-}
-
 
 
 .dropbtn {
@@ -217,8 +231,7 @@ div.third {
 /* (C) TICKER ITEMS */
 .vitem { text-align: center; }
  
-/* (D) ANIMATION - MOVE ITEMS FROM TOP TO BOTTOM */
-/* CHANGE KEYFRAMES IF YOU ADD/REMOVE ITEMS */
+
 .vmove { position: relative; }
 @keyframes tickerv {
   0% { bottom: 0; } /* FIRST ITEM */
@@ -233,8 +246,23 @@ div.third {
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1, 0, .5, 0);
 }
-.vmove:hover { animation-play-state: paused; }
+.vmove:hover { animation-play-state: paused;
+ }
 
+ .btnScrollToTop
+ {
+  position:fixed;
+  right: 10px;
+  bottom:10px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  background:#e62739;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  color:#fff;
+  outline:none;
+  cursor:pointer;
+}
 
 
 
